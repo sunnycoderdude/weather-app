@@ -60,6 +60,26 @@ $.ajax({
         
     });
 
+    // 5 day forecast
+    var queryURL3 = "https://api.openweathermap.org/data/2.5/forecast?lat="+lat+"&lon="+lon+ "&APPID=" + APIkey;
+    console.log(queryURL3);
+    $.ajax({
+        url: queryURL3,
+        method: "GET"
+      }).then(function(response3) {
+        console.log(response3);
+
+        var forecastOne = [response3.list[0].dt, response3.list[0].weather.icon, response3.list[0].main.temp, response3.list[0].main.humidity];
+        var forecastTwo = [response3.list[4].dt, response3.list[4].weather.icon, response3.list[4].main.temp, response3.list[4].main.humidity];
+        var forecastThree = [response3.list[8].dt, response3.list[8].weather.icon, response3.list[8].main.temp, response3.list[8].main.humidity];
+        var forecastFour = [response3.list[8].dt, response3.list[8].weather.icon, response3.list[8].main.temp, response3.list[8].main.humidity];
+        console.log(forecastOne);
+        console.log(forecastTwo);
+        console.log(forecastThree);
+        console.log(forecastFour);
+
+        
+    });
   });
 
 
