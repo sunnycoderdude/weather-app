@@ -27,23 +27,50 @@
     <h1 class="weatherHeader">Weather Dashboard</h1>
     
     <div class="container">
-        <div class="row">
-            <div class="col-3">
-                <div class="row searchBar">
-                    Test
-                </div>
-                <div class="row searchHistory">
-                    Test
-                </div>
-            </div>
-                
-            <div class="col-2">
-                <div class="row mainShow">
-                    Test
-                </div>
 
+        <div class="row">
+            <div class="col-4">
+                
+                    <div class="row">
+                        <div class="searchBarCity">Enter a City</div>
+                    </div>
+
+                    <div class="row">
+                        
+                        <span><input class="searchBar" type="text" placeholder="Search.."><button type="button" class="btn btn-info">
+                            <span class="glyphicon glyphicon-search"></span> Submit
+                          </button></span>
+                        
+                        
+                    </div>
+                    <br>
+
+                    
+                        <div class="searchHistory"></div>
+                    
+            </div>
+                    
+            <div class="col-6 mainboard">
+                
+                    <div class="row city"></div>
+                    <br>
+                    <div class="row temp">Temperature: </div>
+                    <br>
+                    <div class="row humidity">Humidity: </div>
+                    <br>
+                    <div class="row windspeed">Wind Speed: </div>
+                    <br>
+                    <div class="row uv">UV Index: </div>
+            
+
+                <br>
+                <div>Five Day Forecast</div>
                 <div class="row fiveDay">
-                    Test
+                    <div class="col-2 dayone"></div>
+                    <div class="col-2 daytwo"></div>
+                    <div class="col-2 daythree"></div>
+                    <div class="col-2 dayfour"></div>
+                    <div class="col-2 dayfive"></div>
                 </div>
             </div>
         </div>

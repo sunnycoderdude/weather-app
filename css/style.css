@@ -8,6 +8,39 @@
 }
 
 
+.searchHistory {
+    background: #eeeeee;
+    margin: 0px 250px 0px 0px;
+
+}
+
+.city {
+    font: 50px;
+}
+
+.mainboard {
+    border: 1px black;
+}
+
+.dayone {
+    background: lightblue;
+}
+
+.daytwo {
+    background: lightblue;
+}
+
+.daythree {
+    background: lightblue;
+}
+
+.dayfour {
+    background: lightblue;
+}
+
+.dayfive {
+    background: lightblue;
+}
 
 /* .welcome {
     text-align: center;
